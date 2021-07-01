@@ -109,7 +109,7 @@ Command
                 <td>create a new instance/object</td>
         </tr>
 	<tr>
-                <td>update [class name] [] [] </td>
+                <td>update [class name] [attribute name] ["attribute value"] </td>
                 <td>Updates an instance based on te class name</td>
         </tr>
 	<tr>
