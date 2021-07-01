@@ -38,6 +38,7 @@ $ echo "<command>" | ./console.py
 Examples
 -----------
 
+create command:
 ```
 $./console.py
 (hbnb) create BaseModel
@@ -45,6 +46,7 @@ $./console.py
 (hbnb)
 ```
 
+all command:
 ```
 $./console.py
 (hbnb) all BaseModel
@@ -52,12 +54,32 @@ $./console.py
 (hbnb)
 ```
 
+show command:
 ```
 $./console.py
 (hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
 [BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612)}
 (hbnb)
 ```
+
+update command:
+```
+$./console.py
+(hbnb) update BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d first_name "betty"
+(hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
+[BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'first_name': 'betty', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612), 'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d'}
+(hbnb)
+```
+
+destroy command:
+```
+$./console.py
+(hbnb) destroy BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
+(hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
+** no instance found **
+(hbnb)
+```
+
 ---
 Command
 ------------
