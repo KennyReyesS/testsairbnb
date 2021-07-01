@@ -93,7 +93,7 @@ Command
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>help <command name> </td>
+		<td>help [command name] </td>
 		<td>Print a help string containing instructions about the commands</td>
 	</tr>
 	<tr>
