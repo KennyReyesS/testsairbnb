@@ -35,13 +35,27 @@ $ echo "<command>" | ./console.py
 ```
 
 ---
-Example
+Examples
 -----------
 
 ```
 $./console.py
 (hbnb) create BaseModel
-9b0b9ec6-3c22-492a-b44a-b9793e8ede88
+4811b20d-715b-4b60-bcfc-be68c9074a0d
+(hbnb)
+```
+
+```
+$./console.py
+(hbnb) all BaseModel
+["[BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612)}"]
+(hbnb)
+```
+
+```
+$./console.py
+(hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
+[BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612)}
 (hbnb)
 ```
 ---
