@@ -40,10 +40,10 @@ Example
 
 ```
 $./console.py
-(hbnb) all....
-
+(hbnb) create BaseModel
+9b0b9ec6-3c22-492a-b44a-b9793e8ede88
+(hbnb)
 ```
-
 ---
 Command
 ------------
