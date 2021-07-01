@@ -97,19 +97,19 @@ Command
 		<td>Print a help string containing instructions about the commands</td>
 	</tr>
 	<tr>
-		<td>all <class name> </td>
+		<td>all [class name] </td>
 		<td>Print all string of all instances based on the class name</td>
 	</tr>
 	<tr>
-		<td>show <class name> </td>
+		<td>show [class name] [id] </td>
                 <td>Print the string of instance based in the class name</td>
 	</tr>
 	<tr>
-                <td>create <class name> </td>
+                <td>create [class name] </td>
                 <td>create a new instance/object</td>
         </tr>
 	<tr>
-                <td>update <class name> </td>
+                <td>update [class name] [] [] </td>
                 <td>Updates an instance based on te class name</td>
         </tr>
 	<tr>
