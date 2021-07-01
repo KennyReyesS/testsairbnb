@@ -38,9 +38,16 @@ $ echo "<command>" | ./console.py
 Examples
 -----------
 
-create command:
+help [command name]:
 ```
 $./console.py
+(hbnb) help create
+Create a new instance of BaseModel and save in JSON
+(hbnb)
+```
+
+create command:
+```
 (hbnb) create BaseModel
 4811b20d-715b-4b60-bcfc-be68c9074a0d
 (hbnb)
@@ -48,7 +55,6 @@ $./console.py
 
 all command:
 ```
-$./console.py
 (hbnb) all BaseModel
 ["[BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612)}"]
 (hbnb)
@@ -56,7 +62,6 @@ $./console.py
 
 show command:
 ```
-$./console.py
 (hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
 [BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612)}
 (hbnb)
@@ -64,7 +69,6 @@ $./console.py
 
 update command:
 ```
-$./console.py
 (hbnb) update BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d first_name "betty"
 (hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
 [BaseModel] (4811b20d-715b-4b60-bcfc-be68c9074a0d) {'first_name': 'betty', 'created_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378597), 'updated_at': datetime.datetime(2021, 7, 1, 0, 59, 53, 378612), 'id': '4811b20d-715b-4b60-bcfc-be68c9074a0d'}
@@ -73,7 +77,6 @@ $./console.py
 
 destroy command:
 ```
-$./console.py
 (hbnb) destroy BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
 (hbnb) show BaseModel 4811b20d-715b-4b60-bcfc-be68c9074a0d
 ** no instance found **
